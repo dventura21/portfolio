@@ -1,0 +1,126 @@
+@use '../custom' as *;
+
+@font-face {
+    font-family: 'Line Rounded Icons';
+    src: url('https://assets.website-files.com/61e8c105beb7fc03587e58df/61e8c105beb7fc29847e5938_line-rounded-icons.woff2') format('woff2'), url('https://assets.website-files.com/61e8c105beb7fc03587e58df/61e8c105beb7fc3c5a7e5947_line-rounded-icons.eot') format('embedded-opentype'), url('https://assets.website-files.com/61e8c105beb7fc03587e58df/61e8c105beb7fc95677e596e_line-rounded-icons.woff') format('woff'), url('https://assets.website-files.com/61e8c105beb7fc03587e58df/61e8c105beb7fc44bb7e5948_line-rounded-icons.ttf') format('truetype'), url('https://assets.website-files.com/61e8c105beb7fc03587e58df/61e8c105beb7fc2d617e5970_line-rounded-icons.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.link-wrapper {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .line-rounded-icon {
+    font-family: 'Line Rounded Icons', sans-serif;
+    line-height: 1em;
+    margin-left: 5px;
+    display: inline-block;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+  }
+  
+  .link-wrapper:hover .line-rounded-icon {
+    transform: translate3d(5px, -5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+  }
+  
+
+.link-wrapper {
+    color: #141414;
+    font-weight: 500;
+    line-height: 1.143em;
+    display: inline-block;
+  }
+
+
+
+.heading-1 {
+    color: #141414;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.278em
+}
+
+.heading-2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #141414;
+    font-size: 26px;
+    line-height: 1.385em;
+    font-weight: 500;
+}
+
+.heading-4 {
+    color: #141414;
+    font-size: 18px;
+    line-height: 1.56em;
+    font-weight: 500;
+}
+
+.mg-bottom-0{
+    margin-bottom: 0;
+}
+
+
+.link-wrapper {
+    display: inline-block;
+    color: #141414;
+    line-height: 1.143em;
+    font-weight: 500;
+
+    .link-text {
+        display: inline-block;
+        transition: color 300ms ease;
+    }
+}
+
+.divider {
+    height: 1px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: #e8e8e8;
+}
+
+.text-300 {
+    font-size: 18px;
+    line-height: 1.111em;
+
+    &.title-dark-mode {
+        color: #141414;
+    }
+}
+
+.text-100 {
+    font-size: 14px;
+    line-height: 1.143em;
+    margin-bottom: 8px;
+
+    &.title-dark-mode {
+        color: #141414;
+    }
+
+    &.bold {
+        font-weight: 600;
+    }
+}
+
+.flex-horizontal {
+    display: flex;
+
+    &.children-wrap {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+.text-line {
+    width: 12px;
+    min-height: 1px;
+    margin-right: 8px;
+    margin-left: 8px;
+    background-color: #e8e8e8;
+}
