@@ -11955,6 +11955,31 @@ section {
   margin-left: auto;
 }
 
+@media screen and (max-width: 767px) {
+  ._432px {
+    max-width: 432px;
+  }
+  .grid-2-columns.sidebar-right {
+    grid-row-gap: 60px;
+    grid-template-columns: 1fr;
+  }
+  .grid-2-columns.img-and-p {
+    grid-template-columns: auto;
+  }
+  .avatar-circle {
+    justify-self: center;
+  }
+  .inner-container {
+    width: 370px;
+    justify-self: center;
+  }
+  .inner-container h1 {
+    font-size: 30px;
+  }
+  .inner-container .center-text {
+    text-align: center;
+  }
+}
 @font-face {
   font-family: "Line Rounded Icons";
   src: url("https://assets.website-files.com/61e8c105beb7fc03587e58df/61e8c105beb7fc29847e5938_line-rounded-icons.woff2") format("woff2"), url("https://assets.website-files.com/61e8c105beb7fc03587e58df/61e8c105beb7fc3c5a7e5947_line-rounded-icons.eot") format("embedded-opentype"), url("https://assets.website-files.com/61e8c105beb7fc03587e58df/61e8c105beb7fc95677e596e_line-rounded-icons.woff") format("woff"), url("https://assets.website-files.com/61e8c105beb7fc03587e58df/61e8c105beb7fc44bb7e5948_line-rounded-icons.ttf") format("truetype"), url("https://assets.website-files.com/61e8c105beb7fc03587e58df/61e8c105beb7fc2d617e5970_line-rounded-icons.svg") format("svg");
@@ -12115,22 +12140,9 @@ section {
   transform: translate3d(5px, -5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
 }
 
-.inner-container {
-  margin-top: 8px;
-  margin-right: 20px;
-}
-.inner-container._432px {
-  max-width: 432px !important;
-}
 .inner-container._300px.project-item {
   margin-bottom: 32px;
   margin-right: 20px;
-}
-.inner-container._438px {
-  max-width: 438px;
-}
-.inner-container._432px {
-  max-width: 438px;
 }
 .inner-container._373px {
   max-width: 373px !important;
