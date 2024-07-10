@@ -1,8 +1,8 @@
 RewriteEngine On
 RewriteBase /
 
-# Redirect /portfolio-projects/webuild to /portfolio-projects/project-2 internally
-RewriteRule ^portfolio-projects/webuild$ portfolio-projects/project-2 [L]
+# Redirect /portfolio-projects/webuild to /portfolio-projects/project-2.html internally
+RewriteRule ^portfolio-projects/webuild$ portfolio-projects/project-2.html [L]
 
 # If the user requests /something.html, internally serve /something.html
 RewriteCond %{REQUEST_FILENAME}.html -f
