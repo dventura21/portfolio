@@ -2,12 +2,9 @@ RewriteEngine On
 RewriteBase /
 
 # Redirect /portfolio-projects/project-2.html to /portfolio-projects/webuild/
-RewriteRule ^portfolio-projects/project-2\.html$ /portfolio-projects/webuild/ [L,R=301]
+RewriteCond %{REQUEST_URI} ^/portfolio-projects/project-2\.html$
+RewriteRule ^(.*)$ /portfolio-projects/webuild/ [R=301,L]
 
-# If the user requests /something.html, internally serve /something.html
+# If the user requests /something.html, internally serve /something
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
-
-# Redirect /something.html to /something internally
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [L,R]
